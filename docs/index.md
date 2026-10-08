@@ -1,28 +1,45 @@
-# Documentació del Projecte NUMERO 4
+# Markdown Playground Demo
 
+This preview supports *italic*, **bold**, ***bold+italic***, ~~strikethrough~~, and inline code like `npm run dev`.
+
+## Headers
+
+### H3 Section
+#### H4 Section
+##### H5 Section
+
+## Lists
+
+- Unordered list item
+- Another item with **strong** text
+
+1. Ordered step one
+2. Ordered step two
+
+## Image
+
+![Sample chart](/static/home/users-graph.png)
+
+## Code blocks
+
+```python
+def greet(name: str) -> str:
+    return f"Hello, {name}"
 ```
-php 5
+
+```javascript
+const users = [{ name: "Alice" }, { name: "Bob" }];
+console.log(users.map((u) => u.name).join(", "));
 ```
 
-Benvinguts a la documentació del nostre projecte.
+```bash
+curl -s https://www.devtoolsdaily.com/sitemap.xml | head -n 5
+```
 
-## Introducció
+## Table
 
-En aquest lloc web documentarem el desenvolupament de la nostra aplicació.
-
-## Continguts
-
-Al llarg del projecte documentarem:
-
-- Arquitectura de l'aplicació
-- Configuració de Docker
-- Servidor Nginx
-- Base de dades MariaDB
-- API REST amb Node.js i Express
-- Integració amb Gemini
-- Desplegament de l'aplicació
-
-## Equip
-
-- Alumne 1
-- Alumne 2
+| Feature | Status | Notes |
+| --- | :---: | --- |
+| GFM Tables | Yes | Uses `remark-gfm` |
+| Syntax Highlighting | Yes | Multiple languages |
+| Inline Code | Yes | Styled with monospace |
